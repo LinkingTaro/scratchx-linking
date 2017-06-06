@@ -1,6 +1,3 @@
-window.onFocus = function(){
-alert('onFocus');
-}
 
 window.onShow = function(){
 alert('onShow');
