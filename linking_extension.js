@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onUnload = function(){
 alert('javascript');
 }
 
