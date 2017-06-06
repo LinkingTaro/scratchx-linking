@@ -222,3 +222,35 @@
   //ブロックを登録
   ScratchExtensions.register('Linking Extension', descriptor, ext);
 })({});
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>JavaScript: onloadイベント、onunloadイベント</title>
+        <meta http-equiv="Content-Language" content="ja" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <script type="text/javascript">
+            /* onloadイベント発生した時に行う処理を記述 */
+            function init() {
+                alert("ページが読み込まれました");
+            }
+            /* onunloadイベントが発生した時に行う処理を記述 */
+            function init2() {
+                alert("ページがアンロードされました");
+            }
+        </script>
+    </head>
+    <body onload="init()" onunload="init2()">
+        <p>
+            ページの読み込み完了時に、onLoadイベントが発生します。<br>
+            ページを閉じた時やリロード（更新）した時に、onUnloadイベントが発生します。
+        </p>
+        <p>
+            <input type="button" value="リロード(更新）する" onclick="window.location.reload()" />
+            <input type="button" value="閉じる" onclick="self.close()" />
+        </p>
+    </body>
+</html>
+
+
