@@ -1,5 +1,9 @@
 window.onFocus = function(){
-alert('javascript');
+alert('onFocus');
+}
+
+window.onShow = function(){
+alert('onShow');
 }
 
 (function(ext) {
