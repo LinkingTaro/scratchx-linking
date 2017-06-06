@@ -1,8 +1,4 @@
 
-window.onShow = function(){
-alert('onShow');
-}
-
 (function(ext) {
   var ready = false;
   var requesting = false;
