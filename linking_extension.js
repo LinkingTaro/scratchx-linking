@@ -222,9 +222,3 @@
   //ブロックを登録
   ScratchExtensions.register('Linking Extension', descriptor, ext);
 })({});
-
-
-window.onload = function(){
-// ページ読み込み時に実行したい処理
-  alert('javascript');
-}
