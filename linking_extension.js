@@ -1,3 +1,7 @@
+window.onload = function(){
+alert('javascript');
+}
+
 (function(ext) {
   var ready = false;
   var requesting = false;
