@@ -1,4 +1,4 @@
-window.onUnload = function(){
+window.onFocus = function(){
 alert('javascript');
 }
 
