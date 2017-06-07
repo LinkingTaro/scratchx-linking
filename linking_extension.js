@@ -1,6 +1,4 @@
-console.log('test1');
-
-(function(ext) {
+function(ext) {
   var ready = false;
   var requesting = false;
   var device;
