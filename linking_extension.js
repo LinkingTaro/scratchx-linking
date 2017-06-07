@@ -33,6 +33,11 @@
   }
 
   ext._shutdown = function() {};
+  
+  ext._test = function() {
+   console.log('test function called...');
+  
+  };
 
   ext._getStatus = async function() {
     console.log('status function called...');
