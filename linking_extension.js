@@ -10,7 +10,7 @@
 
   var button_state;
   var clicked = false;
-  console.log('test2');]
+  console.log('test2');
   
   anyNamedDevice = function() {
     console.log('test3');
