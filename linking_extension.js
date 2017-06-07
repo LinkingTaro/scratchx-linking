@@ -34,7 +34,7 @@
 
   ext._shutdown = function() {};
   
-  ext._test = function() {
+  ext._test = async function() {
    console.log('test function called...');
   
   };
