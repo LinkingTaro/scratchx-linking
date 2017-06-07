@@ -1,3 +1,4 @@
+console.log('test1');
 
 (function(ext) {
   var ready = false;
@@ -11,8 +12,10 @@
 
   var button_state;
   var clicked = false;
-
+  console.log('test2');]
+  
   anyNamedDevice = function() {
+    console.log('test3');
     // This is the closest we can get for now to get all devices.
     // https://github.com/WebBluetoothCG/web-bluetooth/issues/234
     return Array.from('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ')
@@ -21,6 +24,7 @@
   }
 
   getSupportedProperties = function(characteristic) {
+    console.log('test4');
     let supportedProperties = [];
     for (const p in characteristic.properties) {
       if (characteristic.properties[p] === true) {
